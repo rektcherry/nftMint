@@ -148,10 +148,8 @@ function checkStage() public view returns (Stage stage){
   function reveal() public onlyOwner {
       revealed = true;
   }
-       /**
-     * DM Pyromån that you stole his Moonpupz
-     */
-      function reservePlanets() public onlyOwner {        
+
+      function reserveNFT() public onlyOwner {        
         uint supply = totalSupply();
         uint i;
         for (i = 0; i < 50; i++) {
@@ -159,9 +157,6 @@ function checkStage() public view returns (Stage stage){
         }
     }
 
-      /**
-     * Wen reveal?!
-     */
     function setRevealTimestamp(uint256 revealTimeStamp) public onlyOwner {
         REVEAL_TIMESTAMP = revealTimeStamp;
     } 
